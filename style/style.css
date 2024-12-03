@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+} 
+nav{
+    font-family: 'Raleway';
+    background-color: black;
+    border-bottom: 2px solid grey; 
+}
+.nav--container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;  
+}
+.logo--nav{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.nav--btn{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.icon--nav{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.fa-solid{ 
+    font-size: 34px;
+    color: white;
+}
+
+.logo--text{
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+}
+
+.fa-brands{
+    font-size: 28px;
+    color: white;
+}
+
+.fa-brands:hover{
+    color: orange;
+    transition: .4s ease;
+}
+
+.Cv--btn {
+    width: 160px;
+    height: 46px;
+    border-radius: 22px;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border: 2px solid white;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+.Cv--btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 0;
+    transition: left 0.4s ease;
+}
+
+.Cv--btn:hover::before {
+    left: 0;
+}
+
+.Cv--btn:hover {
+    color: black;
+}
+
+.Cv--btn span {
+    position: relative;
+    z-index: 1;
+}
+
+header{
+    font-family: 'Roboto';
+    background-color: black;
+}
+
+.header--container{
+    width: 80%;
+    height: 700px;
+    margin: auto; 
+    padding-top: 80px;
+    display: flex;
+}
+
+.left--card{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name--text{
+    color: gray;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.h1--name{
+    color: white;
+    font-size: 52px;
+    font-weight: 900;
+}
+.h2--job{
+    font-size: 44px;
+    font-weight: 800;
+    color: #fe773d;
+}
+.abut--p{
+    color: white;
+    font-size: 22px; 
+    font-weight: 700;
+}
+
+.header--btn{
+    width: 120px;
+    height: 45px;
+    border-radius: 22px;
+    color: black;
+    background-color: #fe773d;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 22px;
+    transition: .4s ease;
+}
+
+.header--btn:hover{
+    box-shadow: 0 0 15px 5px #fe773d;  
+    transform: scale(1.04);
+    color: white;
+}
+
+.right--card{
+    width: 40%;
+    margin: 0  auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+    margin-right: 80px;
+} 
+
+.header--img{  
+    border-radius: 20px;
+    transition: .4s ;
+}
+.header--img:hover{
+    
+    box-shadow: 0 0 15px 5px #fe773d;  
+    transform: scale(1.04);
+    transition: .5s;
+}  .banner {
+    background-color: white;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 26px;
+    height: 80px;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    color: black;
+}
+
+.marquee-text {
+    margin-right: 200px;   
+}
+
+.main{
+    font-family: 'Raleway';   
+    background-color: black;
+    border-bottom: 2px solid gray;
+    border-top: 2px solid gray;
+}
+
+.main--container{
+    padding: 80px 0;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    
+}
+
+.card{
+    width: 300px;
+    height: 260px;  
+    background-color:  rgba(128, 128, 128, 0.24);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px; 
+    padding: 20px 20px;
+    border-radius: 12px;
+}
+
+.fa-regular{
+    font-size: 40px;
+    color: gold;
+}
+
+.main--tex{
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.card--bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer{ 
+    background-color: black;
+    font-family: 'Raleway';
+}
+
+.container--footer{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    padding: 40px 0;
+
+    padding-top: 80px;
+}
+
+
+
+
+.form-container { 
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #6200ea;
+    outline: none;
+  }
+  
+  .submit-btn {
+    background-color: #6200ea;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #3700b3;
+  }
+
+  .left--footer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+    padding-top: 80px;
+  }
+  
+  .footer--call{
+    font-size: 32px;
+  }
+
+  .icon{
+    display: flex;
+    gap: 20px;
+  } 
+
+  @media screen and  (min-width:355px) and (max-width: 431px) {
+    nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: black; 
+    }
+    .nav--container { 
+        align-items: center;
+        gap: 45px;  
+        
+    }
+
+    .nav--btn {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .logo--text {
+        font-size: 24px;
+    }
+
+    .Cv--btn {
+        width: 140px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .header--container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        gap: 80px;
+    }
+
+    .left--card, .right--card {
+        width: 100%;
+    }
+
+    .h1--name {
+        font-size: 40px;
+    }
+
+    .h2--job {
+        font-size: 32px;
+    }
+
+    .abut--p {
+        font-size: 18px;
+    }
+
+    .header--btn {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .header--img {
+        width: 80%;
+        margin: auto;
+    }
+
+    .banner {
+        font-size: 20px;
+    }
+
+    .main--container {
+        padding: 40px 0;
+        gap: 40px;
+    }
+
+    .card {
+        width: 100%;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .card--bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main--tex {
+        font-size: 24px;
+    }
+
+    .container--footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .form-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .footer--call {
+        font-size: 28px;
+    }
+
+    .icon { 
+        gap: 15px;
+    }
+    .icon--nav{
+        display: none;
+    }
+}
+
+
+@media screen   and (max-width: 1025px) { 
+    .nav--container {
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 0;
+    }
+
+    .logo--text {
+        font-size: 28px;
+    }
+
+    .Cv--btn {
+        width: 140px;
+        height: 40px;
+        font-size: 14px;
+    }
+ 
+    .header--container {
+        flex-direction: column;
+        height: auto;
+        padding-top: 60px;
+        padding: 40px 0;
+    }
+    .header--btn{
+        margin: 0 auto;
+    }
+    .left--card {
+        width: 100%;
+        text-align: center;
+    }
+
+    .h1--name {
+        font-size: 48px;
+    }
+
+    .h2--job {
+        font-size: 32px;
+    }
+
+    .abut--p {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .right--card {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .header--img {
+        width: 80%;
+        max-width: 300px;
+        margin-top: 20px;
+    }
+ 
+    .main--container {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .card--bottom {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        gap: 40px;
+    }
+ 
+    .container--footer {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .left--footer {
+        text-align: center;
+    }
+
+    .icon{
+        margin: 0 auto;
+    }
+
+    .form-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+ 
