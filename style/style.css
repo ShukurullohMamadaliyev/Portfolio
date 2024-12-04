@@ -188,6 +188,8 @@ header{
     margin-right: 200px;   
 }
 
+
+
 .main{
     font-family: 'Raleway';   
     background-color: black;
@@ -290,7 +292,8 @@ footer{
   
   input:focus, textarea:focus {
     border-color: #6200ea;
-    outline: none;
+    box-shadow: 0 0 5px #6200ea;
+     outline: none;
   }
   
   .submit-btn {
@@ -306,6 +309,7 @@ footer{
   
   .submit-btn:hover {
     background-color: #3700b3;
+    box-shadow: 0 0 10px #6200ea;
   }
 
   .left--footer{
@@ -361,6 +365,80 @@ footer{
     font-size: 27px;
   }
 
+  
+
+.portfolio{
+    padding: 50px 0;
+    background-color: black;
+    font-family: 'Raleway';
+    border-bottom: 4px solid #4b4b4b;
+}
+
+.wrapper{
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.portfolio__content--item{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+
+
+}
+
+.portfolio__content--item:hover img{
+    transform: translateY(-80%);
+}
+
+.img--portfolio{
+    width: 100%; 
+    height: auto;
+    transition: all 10s ease;
+}
+
+.heading{
+    font-size: 52px;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.heading__portfolio--span{
+    color: #fe773d;
+}
+
+.container--portfolio{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+ 
+.map{
+    background-color: black;
+    padding-top: 80px;
+}
+
+ .map--container{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Raleway';
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+ }
+.map--location{
+    width: 100%;
+}
+
   @media screen and  (max-width: 431px) {
     nav{
     position: sticky;
@@ -368,8 +446,7 @@ footer{
     z-index: 1000;
     background-color: black; 
     }
-    .nav--container {   flex-direction: column;
-        align-items: center;
+    .nav--container {   
         gap: 20px;
     }
 
@@ -467,6 +544,24 @@ footer{
     .icon--nav{
         display: none;
     }
+ 
+
+    .wrapper{
+        flex-direction: column; 
+        margin: 0 auto;
+    }
+    .heading{
+        font-size: 28px;
+    }
+    .portfolio__content--item{
+        width: 300px;
+        height: 300px;
+    }
+
+    .map--container{
+        font-size: 32px;
+    }
+
 }
 
 
@@ -560,7 +655,13 @@ footer{
         width: 90%;
         margin: 0 auto;
     }
-}
 
+    
+    .wrapper{
+        flex-direction: column; 
+        margin: 0 auto;
+    }
+
+}
 
  
