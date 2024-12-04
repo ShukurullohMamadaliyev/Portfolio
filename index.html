@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
 </head>
@@ -35,8 +37,11 @@
         <button class="header--btn">Aloqa uchun</button>
         </div> 
 
-        <div class="right--card">
-            <img src="images/photo_2024-12-03_16-20-19-removebg-preview (1).png" alt="" class="header--img">
+        <div class="right--card"> 
+            <img src="images/photo_2024-12-03_16-20-19-removebg-preview (1).png" alt="" class="header--img"   data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="2000">>
         </div>
     </div>
 </header>
@@ -57,22 +62,19 @@
 
         <div class="card--bottom">
 
-            <div class="card"> 
-                <i class="fa-regular fa-lightbulb"></i>
+            <div class="card"  data-aos="zoom-in-down" data-aos-duration="1900">  
                 <p class="card--text">Men front-end dasturchiman HTML, CSS va SCSS  tillarida tajribam bor. Interfeys yaratishda kreativitlik va qulaylikni birlashtirishga intilaman.  .</p>
             </div>
 
-            <div class="card"> 
-                <i class="fa-regular fa-lightbulb"></i>
+            <div class="card" data-aos="zoom-in" data-aos-duration="1800">  
                 <p class="card--text">Foydalanuvchilar uchun estetik va qulay interfeyslar yaratishga intilaman.
 
                     Dizaynda kreativlik va funksionallikni uyg‘unlashtirishni maqsad qilaman. </p>
             </div>
 
 
-            <div class="card"> 
-                <i class="fa-regular fa-lightbulb"></i>
-                <p class="card--text">Har bir loyihada innovatsion va samarali yechimlar topishga harakat qilaman.Texnologiya va dizaynni uyg‘unlashtirib, foydalanuvchilarga qulay tajriba taqdim etishni ustuvor deb bilaman.</p>
+            <div class="card" data-aos="zoom-in-down" data-aos-duration="1900">  
+                <p class="card--text"> Texnologiya va dizaynni uyg‘unlashtirib, foydalanuvchilarga qulay tajriba taqdim etishni ustuvor deb bilaman.</p>
             </div>
 
 
@@ -103,7 +105,8 @@
     </div>
 
 
-  <div class="form-container">
+  <div class="form-container" data-aos="fade-up"
+  data-aos-anchor-placement="top-center" data-aos-duration="1200">
     <form>
       <div class="form-group">
         <label for="firstName">First Name*</label>
@@ -132,6 +135,15 @@
 
     </div>
 </footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+        duration: 1000, // Animatsiya davomiyligi (ms)
+        once: true,     // Animatsiya faqat bir marta ishlaydi
+      });
+    });
+  </script>
 
 
 </body>
