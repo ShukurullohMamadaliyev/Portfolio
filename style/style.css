@@ -162,12 +162,15 @@ header{
     align-items: center;
     justify-content: center;
     margin-bottom: 150px;
-    margin-right: 80px;
+    margin-right: 80px; 
 } 
 
 .header--img{  
     border-radius: 20px;
     transition: .4s ;
+    width: 500px;
+    height: auto;  
+    border-radius: 100%;
 }
 .header--img:hover{
     
