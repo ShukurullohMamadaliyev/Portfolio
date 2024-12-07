@@ -19,6 +19,9 @@
            <a href="#">  <i class="fa-brands fa-github"></i> </a>
            <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
         </div>
+
+        <button id="theme-toggle" class="Cv--btn"><span>Light Mode</span></button>
+
             <Button class="Cv--btn"><span>Download CV</span></Button>
         </div>
     </div>
@@ -181,8 +184,6 @@
     </div>
 </footer>
 
-
-
 <script>
     document.addEventListener('DOMContentLoaded', function() {
       AOS.init({
@@ -191,6 +192,15 @@
       });
     });
   </script>
+
+<script>
+const themeToggleBtn = document.getElementById('theme-toggle');
+themeToggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('light-mode'); 
+  const currentMode = document.body.classList.contains('light-mode') ? 'Dark Mode' : 'Light Mode';
+  themeToggleBtn.querySelector('span').textContent = currentMode;
+});
+</script>
 
 
 </body>
